@@ -11,7 +11,7 @@ target_horizontal_velocity *= move_speed;
 horizontal_velocity = lerp(horizontal_velocity,
                                target_horizontal_velocity,
 							   horizontal_acceleration);
-var move_x = horizontal_velocity;
+move_x = horizontal_velocity;
 
 // veritcal movement
 var is_space_pressed = keyboard_check(vk_space);
