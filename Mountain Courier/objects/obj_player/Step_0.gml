@@ -23,7 +23,7 @@ if(was_space_released){
 	has_released_spacebar_this_jump = true;
 }
 
-is_on_ground = place_meeting(x, y + 2, obj_wall_family);
+is_on_ground = place_meeting(x, y + 6, obj_wall_family);
 if (is_on_ground)
 {
 	downward_acceleration=0;
