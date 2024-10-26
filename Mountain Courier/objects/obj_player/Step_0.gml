@@ -7,6 +7,13 @@ if(y >= room_height || keyboard_check(ord("R"))){
 var target_horizontal_velocity 
   = keyboard_check(vk_right) - keyboard_check(vk_left);
 target_horizontal_velocity *= move_speed;
+var horizontal_acceleration ;
+if(abs(target_horizontal_velocity) > horizontal_velocity){
+	horizontal_acceleration = horizontal_acceleration_positive;
+}
+else{
+	horizontal_acceleration = horizontal_acceleration_negative;
+}
 horizontal_velocity = lerp(horizontal_velocity,
                                target_horizontal_velocity,
 							   horizontal_acceleration);
@@ -16,7 +23,7 @@ move_x = horizontal_velocity;
 var is_space_pressed = keyboard_check(vk_space);
 var was_space_released = keyboard_check_released(vk_space);
 
-show_debug_message(string(is_space_pressed));
+show_debug_message(string(target_horizontal_velocity) + ", " + string(move_x));
 
 if(was_space_released){
 	has_released_spacebar_this_jump = true;
@@ -77,6 +84,7 @@ if(is_space_pressed) {
 
 // show_debug_message("x: " + string(move_x))
 // show_debug_message("y: " + string(downward_velocity))
-move_and_collide(move_x, move_y, obj_wall_family);
+move_and_collide(0     , move_y, obj_wall_family);
+move_and_collide(move_x, 0     , obj_wall_family);
 
 if (move_x != 0) image_xscale = sign(move_x);
