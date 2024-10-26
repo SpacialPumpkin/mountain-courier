@@ -4,7 +4,6 @@ move_x *= move_speed;
 
 var is_space_pressed = keyboard_check(vk_space);
 var was_space_released = keyboard_check_released(vk_space);
-io_clear();
 
 show_debug_message(string(is_space_pressed));
 
@@ -14,6 +13,7 @@ if (isOnGround)
     downward_velocity = 0;
 	num_remaining_flaps = flaps_per_jump;
 	has_released_spacebar_this_jump = false;
+	
     if (is_space_pressed) downward_velocity = -jump_speed; //jump
 }
 else if(num_remaining_flaps > 0 && has_released_spacebar_this_jump && is_space_pressed){
