@@ -44,6 +44,10 @@ if (!isOnGround) {
 	
 	move_y = downward_velocity;
 	
+	if(is_space_pressed){
+		move_y /= floatiness_while_pressing_space;
+	}
+	
 	if(is_space_pressed && num_remaining_flaps <= 0)
 	{
 	  move_y /= floatiness_while_finished_flapping;
