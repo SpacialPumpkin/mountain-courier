@@ -31,7 +31,6 @@ if (is_on_ground)
 
     if (is_space_pressed && has_released_spacebar_this_jump) //regular jump
 	{
-		has_released_spacebar_this_jump = false;
 		downward_velocity = -jump_speed; //jump
 		move_y = downward_velocity;
 		image_index = 0; //reset anim
@@ -42,7 +41,6 @@ else if(num_remaining_flaps > 0
         && has_released_spacebar_this_jump 
 		&& is_space_pressed){
 	downward_acceleration=0;
-	has_released_spacebar_this_jump = false;
 	num_remaining_flaps--;
 	downward_velocity = -flap_jump_speed;
 	image_index = 0; //reset anim
@@ -59,9 +57,7 @@ if (!is_on_ground) {
 		target_downward_acceleration = base_gravity_while_rising;
 	}
 	downward_acceleration 
-	   = lerp(downward_acceleration,
-	          target_downward_acceleration,
-			  vertical_jerk)
+	   = target_downward_acceleration
 	
 	downward_velocity = min(downward_velocity + downward_acceleration, max_fall_speed);
 	
@@ -75,6 +71,9 @@ if (!is_on_ground) {
 	}
 } 
 
+if(is_space_pressed) {
+	has_released_spacebar_this_jump = false;
+}
 
 // show_debug_message("x: " + string(move_x))
 // show_debug_message("y: " + string(downward_velocity))
