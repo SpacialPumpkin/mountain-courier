@@ -29,10 +29,10 @@ if (is_on_ground)
 	downward_acceleration=0;
     downward_velocity = 0;
 	num_remaining_flaps = flaps_per_jump;
-	has_released_spacebar_this_jump = false;
 
     if (is_space_pressed && has_released_spacebar_this_jump) //regular jump
 	{
+		has_released_spacebar_this_jump = false;
 		downward_velocity = -jump_speed; //jump
 		move_y = downward_velocity;
 		image_index = 0; //reset anim
