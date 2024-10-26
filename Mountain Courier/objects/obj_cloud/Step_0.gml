@@ -1,6 +1,6 @@
 x = x - move_speed;
 
-if(x < -100)
+if(x < -1000) //garbage collection
 {
-	x = room_width + 20;
+	instance_destroy();
 }

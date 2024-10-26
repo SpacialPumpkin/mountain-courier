@@ -35,6 +35,7 @@
   "name":"Mountain Courier",
   "resources":[
     {"id":{"name":"obj_camera_follows_player","path":"objects/obj_camera_follows_player/obj_camera_follows_player.yy",},},
+    {"id":{"name":"obj_cloud_spawner","path":"objects/obj_cloud_spawner/obj_cloud_spawner.yy",},},
     {"id":{"name":"obj_cloud","path":"objects/obj_cloud/obj_cloud.yy",},},
     {"id":{"name":"obj_launcher","path":"objects/obj_launcher/obj_launcher.yy",},},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
@@ -45,6 +46,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_cam_debug","path":"sprites/spr_cam_debug/spr_cam_debug.yy",},},
+    {"id":{"name":"spr_cloud_spawner_debug","path":"sprites/spr_cloud_spawner_debug/spr_cloud_spawner_debug.yy",},},
     {"id":{"name":"spr_cloud","path":"sprites/spr_cloud/spr_cloud.yy",},},
     {"id":{"name":"spr_launcher_placeholder","path":"sprites/spr_launcher_placeholder/spr_launcher_placeholder.yy",},},
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},},
