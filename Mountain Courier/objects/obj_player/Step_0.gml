@@ -3,6 +3,10 @@ var move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
 move_x *= move_speed;
 
 var is_space_pressed = keyboard_check(vk_space);
+var was_space_released = keyboard_check_released(vk_space);
+io_clear();
+
+show_debug_message(string(is_space_pressed));
 
 var isOnGround = place_meeting(x, y + 2, obj_wall_family);
 if (isOnGround)
@@ -20,7 +24,7 @@ else if(num_remaining_flaps > 0 && has_released_spacebar_this_jump && is_space_p
 //if we are in the air and we are not moving downward faster than 10
 //accelerate us downward.
 if (!isOnGround) {
-	if(keyboard_key_release(vk_space)){
+	if(was_space_released){
 		has_released_spacebar_this_jump = true;
 	}
 	var downward_acceleration;
@@ -36,6 +40,8 @@ if (!isOnGround) {
 	}
 	downward_velocity = min(downward_velocity + downward_acceleration, 10);
 } 
+
+
 // show_debug_message("x: " + string(move_x))
 // show_debug_message("y: " + string(downward_velocity))
 move_and_collide(move_x, downward_velocity, obj_wall_family);
