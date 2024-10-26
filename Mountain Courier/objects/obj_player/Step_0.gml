@@ -1,8 +1,13 @@
 // left/right movement
-var move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
-move_x *= move_speed;
-var move_y = 0;
+var target_horizontal_velocity 
+  = keyboard_check(vk_right) - keyboard_check(vk_left);
+target_horizontal_velocity *= move_speed;
+horizontal_velocity = lerp(horizontal_velocity,
+                               target_horizontal_velocity,
+							   horizontal_acceleration);
+var move_x = horizontal_velocity;
 
+// veritcal movement
 var is_space_pressed = keyboard_check(vk_space);
 var was_space_released = keyboard_check_released(vk_space);
 
@@ -48,7 +53,7 @@ if (!isOnGround) {
 	downward_acceleration 
 	   = lerp(downward_acceleration,
 	          target_downward_acceleration,
-			  jerk)
+			  vertical_jerk)
 	
 	downward_velocity = min(downward_velocity + downward_acceleration, max_fall_speed);
 	
