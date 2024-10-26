@@ -1,7 +1,6 @@
 // handle death
 if(y >= room_height || keyboard_check(ord("R"))){
-	x = obj_respawn_point.x;
-	y = obj_respawn_point.y;
+	room_restart();
 }
 
 // left/right movement

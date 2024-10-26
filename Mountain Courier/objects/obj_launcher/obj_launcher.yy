@@ -26,8 +26,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"horizontal_launch_speed","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_launch_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"vertical_launch_speed","filters":[],"listItems":[],"multiselect":false,"name":"vertical_launch_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"horizontal_launch_speed","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_launch_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"150","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"vertical_launch_speed","filters":[],"listItems":[],"multiselect":false,"name":"vertical_launch_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"28","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"is_ready","filters":[],"listItems":[],"multiselect":false,"name":"is_ready","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
