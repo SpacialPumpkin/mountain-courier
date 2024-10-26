@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cloud",
+  "%Name":"obj_cloud_spawner",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cloud",
+  "name":"obj_cloud_spawner",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,14 +28,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"move_speed","filters":[],"listItems":[],"multiselect":false,"name":"move_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"lerpAmount","filters":[],"listItems":[],"multiselect":false,"name":"lerpAmount","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cloud",
-    "path":"sprites/spr_cloud/spr_cloud.yy",
+    "name":"spr_cloud_spawner_debug",
+    "path":"sprites/spr_cloud_spawner_debug/spr_cloud_spawner_debug.yy",
   },
   "spriteMaskId":null,
   "visible":true,
