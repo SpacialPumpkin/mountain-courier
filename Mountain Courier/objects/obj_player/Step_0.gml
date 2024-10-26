@@ -12,20 +12,22 @@ if(was_space_released){
 	has_released_spacebar_this_jump = true;
 }
 
-var isOnGround = place_meeting(x, y + 2, obj_wall_family);
-if (isOnGround)
+is_on_ground = place_meeting(x, y + 2, obj_wall_family);
+if (is_on_ground)
 {
 	downward_acceleration=0;
     downward_velocity = 0;
 	num_remaining_flaps = flaps_per_jump;
 	has_released_spacebar_this_jump = false;
 
-    if (is_space_pressed)
+    if (is_space_pressed) //regular jump
 	{
 		downward_velocity = -jump_speed; //jump
 		move_y = downward_velocity;
+		image_index = 0; //reset anim
 	} 
 }
+//flap jump
 else if(num_remaining_flaps > 0 
         && has_released_spacebar_this_jump 
 		&& is_space_pressed){
@@ -33,10 +35,11 @@ else if(num_remaining_flaps > 0
 	has_released_spacebar_this_jump = false;
 	num_remaining_flaps--;
 	downward_velocity = -flap_jump_speed;
+	image_index = 0; //reset anim
 }
 //if we are in the air and we are not moving downward faster than 10
 //accelerate us downward.
-if (!isOnGround) {
+if (!is_on_ground) {
 	
 	var target_downward_acceleration;
 	if(downward_velocity > 0){
