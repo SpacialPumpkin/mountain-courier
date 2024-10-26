@@ -3,6 +3,7 @@
   "%Name":"obj_player",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_player",
@@ -40,6 +41,7 @@
     {"$GMObjectProperty":"v1","%Name":"max_fall_speed","filters":[],"listItems":[],"multiselect":false,"name":"max_fall_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"12","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"vertical_jerk","filters":[],"listItems":[],"multiselect":false,"name":"vertical_jerk","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.3","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"downward_acceleration","filters":[],"listItems":[],"multiselect":false,"name":"downward_acceleration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"is_on_ground","filters":[],"listItems":[],"multiselect":false,"name":"is_on_ground","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"horizontal_velocity","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_velocity","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"horizontal_acceleration","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_acceleration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
   ],
@@ -47,8 +49,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_new",
-    "path":"sprites/spr_player_new/spr_player_new.yy",
+    "name":"spr_player_new_idle",
+    "path":"sprites/spr_player_new_idle/spr_player_new_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
