@@ -1,9 +1,9 @@
 {
   "$GMSprite":"",
   "%Name":"spr_player_new_flap",
-  "bboxMode":0,
-  "bbox_bottom":61,
-  "bbox_left":2,
+  "bboxMode":2,
+  "bbox_bottom":59,
+  "bbox_left":4,
   "bbox_right":49,
   "bbox_top":0,
   "collisionKind":1,
