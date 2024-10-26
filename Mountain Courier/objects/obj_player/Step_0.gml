@@ -15,6 +15,7 @@ if(was_space_released){
 var isOnGround = place_meeting(x, y + 2, obj_wall_family);
 if (isOnGround)
 {
+	downward_acceleration=0;
     downward_velocity = 0;
 	num_remaining_flaps = flaps_per_jump;
 	has_released_spacebar_this_jump = false;
@@ -28,6 +29,7 @@ if (isOnGround)
 else if(num_remaining_flaps > 0 
         && has_released_spacebar_this_jump 
 		&& is_space_pressed){
+	downward_acceleration=0;
 	has_released_spacebar_this_jump = false;
 	num_remaining_flaps--;
 	downward_velocity = -flap_jump_speed;
@@ -36,25 +38,27 @@ else if(num_remaining_flaps > 0
 //accelerate us downward.
 if (!isOnGround) {
 	
-	var downward_acceleration;
+	var target_downward_acceleration;
 	if(downward_velocity > 0){
-		downward_acceleration = base_gravity_while_falling;
+		target_downward_acceleration = base_gravity_while_falling;
 	}
 	else{
-		downward_acceleration = base_gravity_while_rising;
+		target_downward_acceleration = base_gravity_while_rising;
 	}
+	downward_acceleration 
+	   = lerp(downward_acceleration,
+	          target_downward_acceleration,
+			  jerk)
 	
 	downward_velocity = min(downward_velocity + downward_acceleration, max_fall_speed);
 	
 	move_y = downward_velocity;
 	
-	if(is_space_pressed){
-		move_y /= floatiness_while_pressing_space;
-	}
-	
-	if(is_space_pressed && num_remaining_flaps <= 0)
+	if(is_space_pressed && downward_velocity > 0)
 	{
+	  downward_acceleration=0;
 	  move_y /= floatiness_while_finished_flapping;
+	  downward_velocity=move_y;
 	}
 } 
 
