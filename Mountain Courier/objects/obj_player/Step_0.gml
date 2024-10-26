@@ -1,3 +1,9 @@
+// handle death
+if(y >= room_height || keyboard_check(ord("R"))){
+	x = obj_respawn_point.x;
+	y = obj_respawn_point.y;
+}
+
 // left/right movement
 var target_horizontal_velocity 
   = keyboard_check(vk_right) - keyboard_check(vk_left);
@@ -25,7 +31,7 @@ if (is_on_ground)
 	num_remaining_flaps = flaps_per_jump;
 	has_released_spacebar_this_jump = false;
 
-    if (is_space_pressed) //regular jump
+    if (is_space_pressed && has_released_spacebar_this_jump) //regular jump
 	{
 		downward_velocity = -jump_speed; //jump
 		move_y = downward_velocity;
