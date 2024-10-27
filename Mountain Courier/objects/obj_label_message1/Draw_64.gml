@@ -1,0 +1,1 @@
+//draw_set_font(Font_OpenSans_RegSize);

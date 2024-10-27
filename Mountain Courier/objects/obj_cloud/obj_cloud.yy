@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cloud",
-    "path":"sprites/spr_cloud/spr_cloud.yy",
+    "name":"spr_cloud_old_1",
+    "path":"sprites/spr_cloud_old_1/spr_cloud_old_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
