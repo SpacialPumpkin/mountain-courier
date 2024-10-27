@@ -119,7 +119,7 @@ else if(num_remaining_flaps > 0
 if (!is_on_ground) {
 	
 	var target_downward_acceleration;
-	if(downward_velocity > 0){
+	if(downward_velocity > 0 ){
 		target_downward_acceleration = base_gravity_while_falling;
 	}
 	else{
@@ -128,7 +128,7 @@ if (!is_on_ground) {
 	downward_acceleration 
 	   = target_downward_acceleration
 	
-	downward_acceleration -= vertical_launch_speed;
+	downward_acceleration = max(-vertical_launch_speed, downward_acceleration - vertical_launch_speed);
 	vertical_launch_speed = sign(vertical_launch_speed) 
       * max(0, (abs(vertical_launch_speed) - (delta_time * launch_speed_reduction_per_second)));
 
