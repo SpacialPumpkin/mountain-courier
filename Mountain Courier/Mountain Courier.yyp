@@ -34,6 +34,7 @@
   },
   "name":"Mountain Courier",
   "resources":[
+    {"id":{"name":"obj_bobbing_enemy","path":"objects/obj_bobbing_enemy/obj_bobbing_enemy.yy",},},
     {"id":{"name":"obj_camera_follows_player","path":"objects/obj_camera_follows_player/obj_camera_follows_player.yy",},},
     {"id":{"name":"obj_cloud_spawner","path":"objects/obj_cloud_spawner/obj_cloud_spawner.yy",},},
     {"id":{"name":"obj_cloud","path":"objects/obj_cloud/obj_cloud.yy",},},
