@@ -1,0 +1,7 @@
+CONTROLS:
+Arrow Keys / WASD = Player Movement
+    Spacebar or W = Player Jump/Flap/Hover
+
+YOUR MISSION:
+Find the Blueberry by traversing the destroyed, monster-infested
+bridge. Deliver it to the Home Island to Win!
