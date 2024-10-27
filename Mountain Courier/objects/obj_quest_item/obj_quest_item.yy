@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_camera_follows_player",
+  "%Name":"obj_quest_item",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_camera_follows_player",
+  "name":"obj_quest_item",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,14 +28,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"lerpAmount","filters":[],"listItems":[],"multiselect":false,"name":"lerpAmount","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"lerpAmount","filters":[],"listItems":[],"multiselect":false,"name":"lerpAmount","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.25","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cam_debug",
-    "path":"sprites/spr_cam_debug/spr_cam_debug.yy",
+    "name":"spr_placeholder_quest_item",
+    "path":"sprites/spr_placeholder_quest_item/spr_placeholder_quest_item.yy",
   },
   "spriteMaskId":null,
   "visible":true,

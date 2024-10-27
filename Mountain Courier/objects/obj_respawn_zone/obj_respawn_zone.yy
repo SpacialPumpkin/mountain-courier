@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_respawn_point",
+  "%Name":"obj_respawn_zone",
   "eventList":[],
   "managed":true,
-  "name":"obj_respawn_point",
+  "name":"obj_respawn_zone",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_respawn_zone",
+    "path":"sprites/spr_respawn_zone/spr_respawn_zone.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
