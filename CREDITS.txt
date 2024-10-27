@@ -1,0 +1,30 @@
+CREDITS
+
+Project Management:
+Adam Meyerhoff
+Evan Leider
+
+Game Design:
+Adam Meyerhoff
+Evan Leider
+Merete Yang
+Jacob
+
+Programming:
+Adam Meyerhoff
+Evan Leider
+
+Art/Animations:
+Jacob
+Adam Meyerhoff
+
+Music: Merete Yang
+
+Sound Effects:
+Merete Yang
+Evan Leider
+
+Special Thanks:
+Additional Art/Animations Assets by Roman Sharf
+
+Developed in GameMaker
