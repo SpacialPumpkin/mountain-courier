@@ -49,6 +49,7 @@
     {"$GMObjectProperty":"v1","%Name":"vertical_launch_speed","filters":[],"listItems":[],"multiselect":false,"name":"vertical_launch_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"launch_speed_reduction_per_second","filters":[],"listItems":[],"multiselect":false,"name":"launch_speed_reduction_per_second","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"horizontal_launch_speed","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_launch_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"mode_wasd_or_arrow_keys","filters":[],"listItems":[],"multiselect":false,"name":"mode_wasd_or_arrow_keys","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
