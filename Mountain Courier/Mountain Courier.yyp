@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"Font_OpenSans_RegSize","path":"fonts/Font_OpenSans_RegSize/Font_OpenSans_RegSize.yy",},},
     {"id":{"name":"obj_bobbing_enemy","path":"objects/obj_bobbing_enemy/obj_bobbing_enemy.yy",},},
+    {"id":{"name":"obj_bridge_piece_2","path":"objects/obj_bridge_piece_2/obj_bridge_piece_2.yy",},},
     {"id":{"name":"obj_bridge_piece","path":"objects/obj_bridge_piece/obj_bridge_piece.yy",},},
     {"id":{"name":"obj_camera_follows_player","path":"objects/obj_camera_follows_player/obj_camera_follows_player.yy",},},
     {"id":{"name":"obj_cloud_spawner","path":"objects/obj_cloud_spawner/obj_cloud_spawner.yy",},},
@@ -76,6 +77,8 @@
     {"id":{"name":"bg_3","path":"sprites/bg_3/bg_3.yy",},},
     {"id":{"name":"bg_4","path":"sprites/bg_4/bg_4.yy",},},
     {"id":{"name":"bg_5","path":"sprites/bg_5/bg_5.yy",},},
+    {"id":{"name":"block_1","path":"sprites/block_1/block_1.yy",},},
+    {"id":{"name":"block_2","path":"sprites/block_2/block_2.yy",},},
     {"id":{"name":"spr_cam_debug","path":"sprites/spr_cam_debug/spr_cam_debug.yy",},},
     {"id":{"name":"spr_cloud_old_1","path":"sprites/spr_cloud_old_1/spr_cloud_old_1.yy",},},
     {"id":{"name":"spr_cloud_old","path":"sprites/spr_cloud_old/spr_cloud_old.yy",},},
