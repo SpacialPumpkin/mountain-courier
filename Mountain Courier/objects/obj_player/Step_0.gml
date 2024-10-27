@@ -90,7 +90,14 @@ if (is_on_ground)
 		move_y = downward_velocity;
 		image_index = 0; //reset anim
 		//if( ! audio_is_playing(WingFlap01) )
+		if(num_remaining_flaps mod 2) //every other jump, different SFX. used modulos
+		{
 			audio_play_sound(WingFlap01, 10, false);
+		}
+		else
+		{
+			audio_play_sound(WingFlap02, 10, false);
+		}
 			//3D Sound - this needs troubleshooting here:
 			//audio_play_sound_at(WingFlap01, x, y, 0, 100, 300, 1, false, 1, 1, 2);
 			//audio file, x pos, y pos, z pos, falloff_ref, falloff_max, falloff_factor, loop, priority, gain, offset, pitch, listener_mask

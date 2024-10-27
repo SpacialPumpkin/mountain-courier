@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.263832,
+  "duration":0.258345,
   "name":"running_start",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"running_start.wav",
   "type":0,
-  "volume":0.27,
+  "volume":0.12,
 }
