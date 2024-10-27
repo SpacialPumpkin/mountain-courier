@@ -1,1 +1,1 @@
-global.has_quest_item = true;
+room_goto_next()

@@ -34,6 +34,7 @@
   },
   "name":"Mountain Courier",
   "resources":[
+    {"id":{"name":"Font_OpenSans_RegSize_large","path":"fonts/Font_OpenSans_RegSize_large/Font_OpenSans_RegSize_large.yy",},},
     {"id":{"name":"Font_OpenSans_RegSize","path":"fonts/Font_OpenSans_RegSize/Font_OpenSans_RegSize.yy",},},
     {"id":{"name":"obj_bobbing_enemy","path":"objects/obj_bobbing_enemy/obj_bobbing_enemy.yy",},},
     {"id":{"name":"obj_bridge_piece_2","path":"objects/obj_bridge_piece_2/obj_bridge_piece_2.yy",},},
@@ -64,6 +65,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"id":{"name":"YouWinRoom","path":"rooms/YouWinRoom/YouWinRoom.yy",},},
     {"id":{"name":"Beam_charge_laser","path":"sounds/Beam_charge_laser/Beam_charge_laser.yy",},},
     {"id":{"name":"bump","path":"sounds/bump/bump.yy",},},
     {"id":{"name":"ChangeLaser_shoot_laser","path":"sounds/ChangeLaser_shoot_laser/ChangeLaser_shoot_laser.yy",},},
@@ -81,6 +83,8 @@
     {"id":{"name":"bg_5","path":"sprites/bg_5/bg_5.yy",},},
     {"id":{"name":"block_1","path":"sprites/block_1/block_1.yy",},},
     {"id":{"name":"block_2","path":"sprites/block_2/block_2.yy",},},
+    {"id":{"name":"go_down_sprite_1","path":"sprites/go_down_sprite_1/go_down_sprite_1.yy",},},
+    {"id":{"name":"go_left_sprite","path":"sprites/go_left_sprite/go_left_sprite.yy",},},
     {"id":{"name":"spr_cam_debug","path":"sprites/spr_cam_debug/spr_cam_debug.yy",},},
     {"id":{"name":"spr_cloud_old_1","path":"sprites/spr_cloud_old_1/spr_cloud_old_1.yy",},},
     {"id":{"name":"spr_cloud_old","path":"sprites/spr_cloud_old/spr_cloud_old.yy",},},
@@ -122,6 +126,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"YouWinRoom","path":"rooms/YouWinRoom/YouWinRoom.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
