@@ -28,5 +28,5 @@ x += move_x;
 y += move_y;
 
 if(move_x != 0){
-	image_xscale = sign(move_x);
+	image_xscale = sign(move_x) * abs(image_xscale);
 }
