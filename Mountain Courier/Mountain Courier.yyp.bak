@@ -40,14 +40,17 @@
     {"id":{"name":"obj_cloud_spawner","path":"objects/obj_cloud_spawner/obj_cloud_spawner.yy",},},
     {"id":{"name":"obj_cloud","path":"objects/obj_cloud/obj_cloud.yy",},},
     {"id":{"name":"obj_eyeball_monster","path":"objects/obj_eyeball_monster/obj_eyeball_monster.yy",},},
+<<<<<<< HEAD
     {"id":{"name":"obj_floating_island_large2","path":"objects/obj_floating_island_large2/obj_floating_island_large2.yy",},},
+=======
+>>>>>>> b6de9ce225f3386b77fc041b1a4177e2ecbd64cf
     {"id":{"name":"obj_floating_island","path":"objects/obj_floating_island/obj_floating_island.yy",},},
     {"id":{"name":"obj_floating_island2","path":"objects/obj_floating_island2/obj_floating_island2.yy",},},
     {"id":{"name":"obj_killbox","path":"objects/obj_killbox/obj_killbox.yy",},},
     {"id":{"name":"obj_launcher","path":"objects/obj_launcher/obj_launcher.yy",},},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"obj_respawn_zone","path":"objects/obj_respawn_zone/obj_respawn_zone.yy",},},
+    {"id":{"name":"obj_respawn_point","path":"objects/obj_respawn_point/obj_respawn_point.yy",},},
     {"id":{"name":"obj_wall_2","path":"objects/obj_wall_2/obj_wall_2.yy",},},
     {"id":{"name":"obj_wall_family","path":"objects/obj_wall_family/obj_wall_family.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
@@ -85,7 +88,6 @@
     {"id":{"name":"spr_player_new_flap","path":"sprites/spr_player_new_flap/spr_player_new_flap.yy",},},
     {"id":{"name":"spr_player_new_idle","path":"sprites/spr_player_new_idle/spr_player_new_idle.yy",},},
     {"id":{"name":"spr_player_new_run","path":"sprites/spr_player_new_run/spr_player_new_run.yy",},},
-    {"id":{"name":"spr_respawn_zone","path":"sprites/spr_respawn_zone/spr_respawn_zone.yy",},},
     {"id":{"name":"spr_wall_2","path":"sprites/spr_wall_2/spr_wall_2.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
   ],
