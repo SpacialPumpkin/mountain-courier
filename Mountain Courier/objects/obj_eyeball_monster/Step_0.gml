@@ -18,15 +18,43 @@ else{ // otherwise, move toward my home point.
 	target_y = origin_y;
 }
 
-var delta_x = target_x - x;
-var move_x = sign(delta_x) * min((abs(delta_x)), move_speed);
+var current_image_index = image_index;
+// very hacky, but this causes the monster to lunge at the player in time with its animation
+if(!has_launched_self && floor(current_image_index) == 0){
+	has_launched_self = true;
 
-var delta_y = target_y - y;
-var move_y = sign(delta_y) * min((abs(delta_y)), move_speed);
 
-x += move_x;
-y += move_y;
+	var distance_to_target = point_distance(x, y, target_x, target_y);
+	
+	if(distance_to_target != 0){
+		var normalized_x = (target_x - x) / distance_to_target;
+		var normalized_y = (target_y - y) / distance_to_target;
+	}
+	else{
+		var normalized_x = 0;
+		var normalized_y = 0;
+	}
+	
+	show_debug_message(string(normalized_x) + ", " + string(normalized_y));
 
-if(move_x != 0){
-	image_xscale = sign(move_x) * abs(image_xscale);
+	horizontal_velocity += normalized_x * move_speed;
+	vertical_velocity += normalized_y * move_speed;
+	
+	show_debug_message(string(horizontal_velocity) + ", " + string(vertical_velocity));
+}
+
+if(floor(current_image_index) == 1){
+	has_launched_self = false;
+}
+
+
+x += horizontal_velocity;
+y += vertical_velocity;
+
+horizontal_velocity = sign(horizontal_velocity) * (max(0, abs(horizontal_velocity) - velocity_fade_rate));
+vertical_velocity = sign(vertical_velocity) * (max(0, abs(vertical_velocity) - velocity_fade_rate));
+
+
+if(horizontal_velocity != 0){
+	image_xscale = -sign(horizontal_velocity) * abs(image_xscale);
 }
