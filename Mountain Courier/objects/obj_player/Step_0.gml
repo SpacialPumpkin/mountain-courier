@@ -8,7 +8,7 @@ var target_horizontal_velocity
   = keyboard_check(vk_right) - keyboard_check(vk_left);
 target_horizontal_velocity *= move_speed;
 var horizontal_acceleration ;
-if(abs(target_horizontal_velocity) > horizontal_velocity){
+if(abs(target_horizontal_velocity) > abs(horizontal_velocity)){
 	horizontal_acceleration = horizontal_acceleration_positive;
 }
 else{
