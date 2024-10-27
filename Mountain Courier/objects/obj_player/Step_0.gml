@@ -10,8 +10,11 @@ if(y >= room_height
 }
 
 // left/right movement
-var target_horizontal_velocity 
-  = keyboard_check(vk_right) - keyboard_check(vk_left);
+var right_pressed = keyboard_check(vk_right) 
+				|| keyboard_check(ord("D"));
+var left_pressed = keyboard_check(vk_left) 
+				|| keyboard_check(ord("A"));
+var target_horizontal_velocity = right_pressed - left_pressed;
 target_horizontal_velocity *= move_speed;
 
 
@@ -36,7 +39,10 @@ move_x = horizontal_velocity;
 //for sound for running start
 if ( running_started == 0 && is_on_ground)
 {
-	if (keyboard_check(vk_right)) || (keyboard_check(vk_left))
+	if (keyboard_check_pressed(vk_right) 
+		|| keyboard_check_pressed(vk_left)
+		|| keyboard_check_pressed(ord("A"))
+		|| keyboard_check_pressed(ord("D")))
 	{
 		audio_play_sound(running_start, 10, false);
 		running_started = 1;
@@ -44,17 +50,24 @@ if ( running_started == 0 && is_on_ground)
 }
 if ( running_started == 1 )
 {
-	if (keyboard_check_released(vk_right)) || (keyboard_check_released(vk_left))
+	if (keyboard_check_released(vk_right) 
+		|| keyboard_check_released(vk_left)
+		|| keyboard_check_released(ord("A"))
+		|| keyboard_check_released(ord("D")))
 	{ 
 		running_started = 0; //reset the running start sound toggle
 	}
 }
 
 // veritcal movement
-var is_space_pressed = keyboard_check(vk_space);
-var was_space_released = keyboard_check_released(vk_space);
+var is_space_pressed = keyboard_check(vk_space)
+					 || keyboard_check(vk_up)
+					 || keyboard_check(ord("W"));
+var was_space_released = keyboard_check_released(vk_space)
+					   || keyboard_check_released(vk_up)
+					   || keyboard_check_released(ord("W"));
 
-show_debug_message(string(target_horizontal_velocity) + ", " + string(move_x));
+// show_debug_message(string(target_horizontal_velocity) + ", " + string(move_x));
 
 if(was_space_released){
 	has_released_spacebar_this_jump = true;
