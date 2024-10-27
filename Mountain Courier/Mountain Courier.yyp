@@ -49,6 +49,7 @@
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
     {"id":{"name":"obj_killbox","path":"objects/obj_killbox/obj_killbox.yy",},},
     {"id":{"name":"obj_label_message1","path":"objects/obj_label_message1/obj_label_message1.yy",},},
+    {"id":{"name":"obj_label_you_win","path":"objects/obj_label_you_win/obj_label_you_win.yy",},},
     {"id":{"name":"obj_launcher","path":"objects/obj_launcher/obj_launcher.yy",},},
     {"id":{"name":"obj_npc_felix","path":"objects/obj_npc_felix/obj_npc_felix.yy",},},
     {"id":{"name":"obj_npc_gabriel","path":"objects/obj_npc_gabriel/obj_npc_gabriel.yy",},},
