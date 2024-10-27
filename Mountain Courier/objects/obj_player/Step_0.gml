@@ -1,5 +1,7 @@
 // handle death
-if(y >= room_height || keyboard_check(ord("R"))){
+if(y >= room_height 
+   || keyboard_check(ord("R"))
+   || place_meeting(x, y, obj_killbox)){
 	room_restart();
 }
 
@@ -7,6 +9,8 @@ if(y >= room_height || keyboard_check(ord("R"))){
 var target_horizontal_velocity 
   = keyboard_check(vk_right) - keyboard_check(vk_left);
 target_horizontal_velocity *= move_speed;
+
+
 var horizontal_acceleration ;
 if(abs(target_horizontal_velocity) > abs(horizontal_velocity)){
 	horizontal_acceleration = horizontal_acceleration_positive;
@@ -14,9 +18,15 @@ if(abs(target_horizontal_velocity) > abs(horizontal_velocity)){
 else{
 	horizontal_acceleration = horizontal_acceleration_negative;
 }
+
+target_horizontal_velocity += horizontal_launch_speed
+horizontal_launch_speed = sign(horizontal_launch_speed) 
+      * (max(0, abs(horizontal_launch_speed) - (delta_time * launch_speed_reduction_per_second)));
+
 horizontal_velocity = lerp(horizontal_velocity,
                                target_horizontal_velocity,
 							   horizontal_acceleration);
+		   
 move_x = horizontal_velocity;
 
 // veritcal movement
@@ -65,6 +75,11 @@ if (!is_on_ground) {
 	}
 	downward_acceleration 
 	   = target_downward_acceleration
+	
+	downward_acceleration -= vertical_launch_speed;
+	vertical_launch_speed = sign(vertical_launch_speed) 
+      * max(0, (abs(vertical_launch_speed) - (delta_time * launch_speed_reduction_per_second)));
+
 	
 	downward_velocity = min(downward_velocity + downward_acceleration, max_fall_speed);
 	
