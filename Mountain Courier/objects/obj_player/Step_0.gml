@@ -2,7 +2,11 @@
 if(y >= room_height 
    || keyboard_check(ord("R"))
    || place_meeting(x, y, obj_killbox)){
+	global.last_death_x = x;
+	global.last_death_y = y;
+	
 	room_restart();
+
 	if( ! audio_is_playing(fallin) )
 	{
 		audio_play_sound(fallin, 10, false);
