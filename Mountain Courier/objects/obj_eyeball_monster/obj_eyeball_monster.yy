@@ -31,7 +31,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"move_speed","filters":[],"listItems":[],"multiselect":false,"name":"move_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"aggro_radius","filters":[],"listItems":[],"multiselect":false,"name":"aggro_radius","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1100","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"aggro_radius","filters":[],"listItems":[],"multiselect":false,"name":"aggro_radius","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"900","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"horizontal_velocity","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_velocity","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"vertical_velocity","filters":[],"listItems":[],"multiselect":false,"name":"vertical_velocity","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"velocity_fade_rate","filters":[],"listItems":[],"multiselect":false,"name":"velocity_fade_rate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
