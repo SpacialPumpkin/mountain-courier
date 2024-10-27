@@ -1,6 +1,10 @@
 // handle death
 if(y >= room_height || keyboard_check(ord("R"))){
 	room_restart();
+	if( ! audio_is_playing(fallin) )
+	{
+		audio_play_sound(fallin, 10, false);
+	}
 }
 
 // left/right movement
@@ -18,6 +22,23 @@ horizontal_velocity = lerp(horizontal_velocity,
                                target_horizontal_velocity,
 							   horizontal_acceleration);
 move_x = horizontal_velocity;
+
+//for sound for running start
+if ( running_started == 0 && is_on_ground)
+{
+	if (keyboard_check(vk_right)) || (keyboard_check(vk_left))
+	{
+		audio_play_sound(running_start, 10, false);
+		running_started = 1;
+	}
+}
+if ( running_started == 1 )
+{
+	if (keyboard_check_released(vk_right)) || (keyboard_check_released(vk_left))
+	{ 
+		running_started = 0; //reset the running start sound toggle
+	}
+}
 
 // veritcal movement
 var is_space_pressed = keyboard_check(vk_space);
@@ -41,6 +62,12 @@ if (is_on_ground)
 		downward_velocity = -jump_speed; //jump
 		move_y = downward_velocity;
 		image_index = 0; //reset anim
+		//if( ! audio_is_playing(WingFlap01) )
+			audio_play_sound(WingFlap01, 10, false);
+			//3D Sound - this needs troubleshooting here:
+			//audio_play_sound_at(WingFlap01, x, y, 0, 100, 300, 1, false, 1, 1, 2);
+			//audio file, x pos, y pos, z pos, falloff_ref, falloff_max, falloff_factor, loop, priority, gain, offset, pitch, listener_mask
+		//}
 	} 
 }
 //flap jump
@@ -51,6 +78,7 @@ else if(num_remaining_flaps > 0
 	num_remaining_flaps--;
 	downward_velocity = -flap_jump_speed;
 	image_index = 0; //reset anim
+	audio_play_sound(WingFlap01, 10, false);
 }
 //if we are in the air and we are not moving downward faster than 10
 //accelerate us downward.

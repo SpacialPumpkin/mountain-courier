@@ -7,7 +7,7 @@ end_y = start_y + dist_y_to_move;
 target_x = end_x;
 target_y = end_y;
 
-if (alarm[0] == -1)
+/*if (alarm[0] == -1)
 {
 	alarm[0] = 10;
-}
+}*/

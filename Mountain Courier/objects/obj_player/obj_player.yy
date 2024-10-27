@@ -45,6 +45,7 @@
     {"$GMObjectProperty":"v1","%Name":"horizontal_acceleration_positive","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_acceleration_positive","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.15","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"move_x","filters":[],"listItems":[],"multiselect":false,"name":"move_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"horizontal_acceleration_negative","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_acceleration_negative","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.7","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"running_started","filters":[],"listItems":[],"multiselect":false,"name":"running_started","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

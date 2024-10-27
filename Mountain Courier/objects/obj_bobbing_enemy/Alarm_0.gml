@@ -1,2 +1,2 @@
 //actions
-alarm[0] = 600;
+//alarm[0] = 600;
