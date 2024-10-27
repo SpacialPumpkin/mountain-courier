@@ -60,7 +60,7 @@
     },
     "name":"spr_placeholder_monster",
     "playback":1,
-    "playbackSpeed":0.8,
+    "playbackSpeed":1.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

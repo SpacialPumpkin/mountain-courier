@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_player_new_idle",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":89,
-  "bbox_left":15,
-  "bbox_right":62,
+  "bbox_left":20,
+  "bbox_right":55,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
